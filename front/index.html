@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lịch Làm Việc & Ghi Chú</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Lịch Làm Việc & Ghi Chú</h1>
+
+        <div class="date-picker">
+            <label for="selectedDate">Chọn ngày:</label>
+            <input type="date" id="selectedDate" name="selectedDate">
+        </div>
+
+        <div class="calendar">
+            <div class="month">
+                <button id="prevMonth">&lt;</button>
+                <h2 id="currentMonth">Tháng [Tháng] [Năm]</h2>
+                <button id="nextMonth">&gt;</button>
+            </div>
+            <div class="weekdays">
+                <div>CN</div>
+                <div>T2</div>
+                <div>T3</div>
+                <div>T4</div>
+                <div>T5</div>
+                <div>T6</div>
+                <div>T7</div>
+            </div>
+            <div class="days" id="days">
+                </div>
+        </div>
+
+        <div class="notes">
+            <h2>Ghi Chú</h2>
+            <div id="noteArea">
+                <p>Chọn một ngày trên lịch hoặc từ bộ chọn để xem và chỉnh sửa ghi chú.</p>
+            </div>
+            <textarea id="noteInput" placeholder="Thêm ghi chú..."></textarea>
+            <button id="saveNoteBtn">Lưu Ghi Chú</button>
+        </div>
+
+        <div class="noted-days-section">
+            <h2>Các Ngày Đã Ghi Chú</h2>
+            <table id="notedDaysTable">
+                <thead>
+                    <tr>
+                        <th>Ngày</th>
+                        <th>Ghi Chú</th>
+                        <th>Thao Tác</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
